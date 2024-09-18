@@ -37,3 +37,7 @@
       overlay.style.display = 'none';
       document.body.classList.remove('show-dialog');
   });
+
+  document.querySelector(".hide-btn").addEventListener("click",()=>{
+    document.querySelector('.banner').style.display = 'none';
+  })
