@@ -28,6 +28,10 @@ body {
   height: 100%;
 }
 
+.cart{
+    cursor: not-allowed;
+}
+
 .cart-text p {
   font-family: "avenir-italic-black", sans-serif;
 }
