@@ -25,7 +25,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "avenir-reg", sans-serif;
+  font-family: "avenir-light", sans-serif;
 }
 
 html,
@@ -81,16 +81,41 @@ body {
 }
 
 .buy-btn {
-  padding: 5px 10px;
-  background-color: rgb(36 38 204);
+  display: inline-block;
+  position: relative;
+  border: 0;
   color: white;
-  border-right: 5px solid #001e62;
-  border-bottom: 5px solid #001e62;
+  background: #2426CC;
+  padding: 5px 10px;
   border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transform-style: preserve-3d;
+  transition: transform 0.1s cubic-bezier(0,0,0.58,1),
+    background 0.3s cubic-bezier(0,0,0.58,1);
+  cursor: pointer;
+}
+.buy-btn:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #393a3b;
+  border-radius: inherit;
+  transform: translate3d(0.15em, 0.3em, -1em);
+  transition: transform 0.1s cubic-bezier(0,0,0.58,1);
 }
 
+
 .buy-btn:hover {
-  /* padding: 3px 10px; */
+  transform: translate(0, 0.2em);
+}
+.buy-btn:hover:before {
+  transform: translate3d(0em,0,-0.2em);
 }
 
 /* Hide the default triangle from summary */
@@ -133,7 +158,7 @@ summary {
 }
 
 .faq-question:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .faq-answer {
@@ -397,6 +422,8 @@ body.show-dialog {
 }
 
 
+
+
 @media (max-width:1023px) {
     #myDialog1 {
         position: fixed;
@@ -426,4 +453,122 @@ body.show-dialog {
         padding: 10px 10px;
     }
     
+}
+
+/* checkout page */
+.checkout-container {
+  display: flex;
+  width: 100%;
+  padding: 0 12%;
+}
+
+.billing-summary {
+  width: 30%;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.checkout-sections {
+  width: 70%;
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.disabled {
+  background-color: #f1f1f1;
+  cursor: not-allowed;
+}
+
+.disabled h3 {
+  opacity: 0.3;
+  font-family: "avenir-italic-black",sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.pin-input:hover{
+  border: 2px solid #1041b5;
+}
+
+.section.active{
+  display: block;
+}
+
+.custom-radio {
+  padding: 5px;
+  appearance: none;
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border: 7px solid #001E62;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+.tilfot {
+  width: 10%;
+  max-width: 12%;
+  display: inline-block;
+  position: relative;
+  border: 0;
+  color: #2426CC;
+  background: #fff;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "avenir-reg",sans-serif;
+  font-weight: bold;
+  transform-style: preserve-3d;
+  transition: transform 0.1s cubic-bezier(0,0,0.58,1),
+    background 0.3s cubic-bezier(0,0,0.58,1);
+  cursor: pointer;
+}
+.tilfot:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #b9babc;
+  border-radius: inherit;
+  transform: translate3d(0.15em, 0.3em, -1em);
+  transition: transform 0.1s cubic-bezier(0,0,0.58,1);
+}
+
+.tilfot:hover {
+  transform: translate(0, 0.2em);
+}
+.tilfot:hover:before {
+  transform: translate3d(0,-0,-0.2em);
+}
+
+.address{
+  font-family: "avenir-italic-black",sans-serif;
+  font-size: 20px;
+}
+
+.bold-italic-text{
+  font-family: "avenir-italic-black",sans-serif;
+
 }

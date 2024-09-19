@@ -7,6 +7,7 @@
   
       question.addEventListener("click", () => {
         item.classList.toggle("active"); // Toggle clicked item
+       
       });
     });
   });
@@ -136,3 +137,4 @@
   closeMenuBtn.addEventListener('click', () => {
       menu.classList.remove('show');
   });
+
