@@ -570,5 +570,26 @@ input, select, textarea {
 
 .bold-italic-text{
   font-family: "avenir-italic-black",sans-serif;
+}
 
+@media (max-width:1023px) {
+  .checkout-container{
+    flex-direction: column;
+    padding: 10px 8px;
+  }
+
+  .checkout-sections{
+    width: 100%;
+    padding: 0;
+  }
+
+  .tilfot{
+    width: 20%;
+    max-width: 20%;
+  }
+  .billing-summary{
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+  }
 }

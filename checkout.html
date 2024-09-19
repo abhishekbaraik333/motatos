@@ -42,7 +42,7 @@
                             <button class="faq-question uppercase text-blueColor text-xl font-bold ">
                                 <span class="bold-italic-text">Produkter</span>
                                 <div class="flex items-center gap-5">
-                                    <div class="text-lg text-zinc-900 lowercase">129 kr.</div>
+                                    <div class="text-lg text-zinc-900 lowercase">249 kr.</div>
                                     <svg class="cross w-[20px] text-red-500 -rotate-[90deg]" fill="none"
                                         xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 0 12 13">
                                         <path vector-effect="non-scaling-stroke" d="m4.2 2.3 4.2 4.2-4.2 4.2"
@@ -55,8 +55,8 @@
                                 <div class="divider border-t-[1px] border-zinc-300 mt-2"></div>
                                 <div class="ml-10 flex mt-3 gap-3">
                                     <img id="openDialog3"
-                                        src="./images/ms230983_1-12c1acd4-e2b1-4ccb-9670-549f4708e999.avif" width="150"
-                                        class="hover:scale-[1.05] duration-300" alt="">
+                                        src="./images/ms230983_1-12c1acd4-e2b1-4ccb-9670-549f4708e999.avif"
+                                        class="hover:scale-[1.05] duration-300 w-[100px] lg:w-[150px]" alt="">
 
                                     <div class="flex flex-col gap-2">
                                         <p class="font-bold" style="padding: 0;font-size: 16px;">
@@ -66,7 +66,7 @@
                                             Red Bull | 24 x 250 ml
                                         </p>
                                         <p class="" style="padding: 0;">
-                                            1 for 129 kr. <br>
+                                            1 for 249 kr. <br>
                                             <span class="text-xs opacity-50">(21,50 kr./l)</span>
                                         </p>
                                         <p class="italic" style="padding: 0;">
@@ -481,7 +481,7 @@
                 </div>
 
                 <!-- 3. Payment Method Section (Initially Disabled) -->
-                <div class="section hidden bg-white text-center px-[12%]" id="section-3">
+                <div class="section hidden bg-white text-center px-4 lg:px-[12%]" id="section-3">
                     <h2 class="text-2xl italic text-blueColor uppercase bold-italic-text">Hvor vil du have din ordre?
                     </h2>
                     <div class="border-blueColor border-2 mt-10 p-3 bg-[#F7F7F7] rounded-md">
@@ -502,9 +502,9 @@
                         <div class="text-start mt-2">
                             <p class="font-light">Dørkode (valgfrit)</p>
                             <div class="flex gap-2 items-center">
-                                <input type="text" checked class="w-[20%] border-blueColor border-2 p-2 rounded-md"
+                                <input type="text" checked class="lg:w-[20%] w-[70%] border-blueColor border-2 p-2 rounded-md"
                                     placeholder="Angiv kode...">
-                                <button id="submit-btn" class="tilfot w-full">
+                                <button id="submit-btn" class="tilfot">
                                     Tilføj
                                 </button>
                             </div>
@@ -528,17 +528,17 @@
                 </div>
 
 
-                <div class="section disabled bg-white p-5 mt-3" id="section-4">
+                <div class="section disabled bg-white p-5 mt-3 hidden lg:block" id="section-4">
                     <h3 class="address">ADRESSE</h3>
                 </div>
 
-                <div class="section disabled bg-white p-5 mt-3" id="section-4">
+                <div class="section disabled bg-white p-5 mt-3 hidden lg:block" id="section-4">
                     <h3 class="address">BETALNINGSMETODE</h3>
                 </div>
             </div>
 
             <!-- Billing Details Section -->
-            <div class="billing-summary sticky top-10">
+            <div class="billing-summary">
                 <div class="bg-white p-4">
                     <ul class="flex flex-col space-y-1 pb-2">
                         <div class="flex flex-row items-baseline space-x-1 text-sm text-gray-80">
@@ -573,6 +573,15 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="section disabled bg-white p-5 mt-3 lg:hidden" id="section-4">
+                <h3 class="address">ADRESSE</h3>
+            </div>
+
+            <div class="section disabled bg-white p-5 mt-3 lg:hidden" id="section-4">
+                <h3 class="address">BETALNINGSMETODE</h3>
+            </div>
+            
 
     </main>
 
