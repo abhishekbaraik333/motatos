@@ -360,7 +360,6 @@ body.show-dialog {
   color: black;
   overflow-y: auto; /* Scrollable if content overflows */
   transition: left 0.3s ease; /* Smooth sliding effect */
-  z-index: 9999;
   padding: 20px;
   box-sizing: border-box;
 }
